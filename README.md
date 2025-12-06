@@ -95,4 +95,5 @@ curl -X POST http://localhost:8081/api/v1/rides \
 
 ```
 
+[Postman Collection Link](https://red-moon-758876.postman.co/workspace/Radio~42c75e17-49e0-43ce-8b75-c99cca4b52fa/collection/36553549-4cf81764-cea8-45fd-bd0f-34ecd139041a?action=share&source=copy-link&creator=36553549)
 ---
