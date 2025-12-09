@@ -9,20 +9,58 @@ import java.time.LocalDate;
 public class Ride {
     @Id
     private String id;
-    private String userId;
-    private String driverId;
+//    private String userId;
+//    private String driverId;
+    private String passengerUsername;
+    private String driverUsername;
     private String pickupLocation;
     private String dropLocation;
+    private Double fare;
     private String status;
     private LocalDate createdAt;
 
     public Ride() {
     }
 
+    public Ride(String id, String passengerUsername, String driverUsername, String pickupLocation, String dropLocation, Double fare, String status, LocalDate createdAt) {
+        this.id = id;
+        this.passengerUsername = passengerUsername;
+        this.driverUsername = driverUsername;
+        this.pickupLocation = pickupLocation;
+        this.dropLocation = dropLocation;
+        this.fare = fare;
+        this.status = status;
+        this.createdAt = createdAt;
+    }
+
+    public String getPassengerUsername() {
+        return passengerUsername;
+    }
+
+    public void setPassengerUsername(String passengerUsername) {
+        this.passengerUsername = passengerUsername;
+    }
+
+    public String getDriverUsername() {
+        return driverUsername;
+    }
+
+    public void setDriverUsername(String driverUsername) {
+        this.driverUsername = driverUsername;
+    }
+
+    public Double getFare() {
+        return fare;
+    }
+
+    public void setFare(Double fare) {
+        this.fare = fare;
+    }
+
     public Ride(String id, String userId, String driverId, String pickupLocation, String dropLocation, String status, LocalDate createdAt) {
         this.id = id;
-        this.userId = userId;
-        this.driverId = driverId;
+//        this.userId = userId;
+//        this.driverId = driverId;
         this.pickupLocation = pickupLocation;
         this.dropLocation = dropLocation;
         this.status = status;
@@ -37,21 +75,21 @@ public class Ride {
         this.id = id;
     }
 
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    public String getDriverId() {
-        return driverId;
-    }
-
-    public void setDriverId(String driverId) {
-        this.driverId = driverId;
-    }
+//    public String getUserId() {
+//        return userId;
+//    }
+//
+//    public void setUserId(String userId) {
+//        this.userId = userId;
+//    }
+//
+//    public String getDriverId() {
+//        return driverId;
+//    }
+//
+//    public void setDriverId(String driverId) {
+//        this.driverId = driverId;
+//    }
 
     public String getPickupLocation() {
         return pickupLocation;
